@@ -3,6 +3,7 @@ import { Wheel } from "react-custom-roulette";
 import QuestionModal from "./QuestionModal";
 import ChallengeModal from './ChallengeModal'
 import { questions, prizes, challenges } from "./data";
+import {Alert, Button} from '@mui/material'
 
 const data = [
   { id: 1, option: "Pregunta" },
@@ -22,8 +23,17 @@ export default () => {
   const [prize, setPrize] = useState("")
   const [challengeOpen, setChallengeOpen] = useState(false)
   const [challenge, setChallenge] = useState('')
+  const [alertVisible, setAlertVisible] = useState(false)
 
   const handleSpinClick = () => {
+
+    const token = localStorage.getItem('spinToken')
+    if(token){
+      setAlertVisible(true)
+      return
+    }
+
+    setAlertVisible(false)
     const newPrizeNumber = Math.floor(Math.random() * data.length);
     setPrizeNumber(newPrizeNumber);
     setMustSpin(true);
@@ -40,15 +50,14 @@ export default () => {
       const newQuestion = Math.floor(Math.random() * questions.length)
       setQuestion(questions[newQuestion])
     }
+    localStorage.setItem('spinToken', 'true');
   };
-
   
 
   return (
     <>
       <div align="center">
-        <h1 align="center">Ruleta</h1>
-        <hr />
+        <img src="../assets/logo.png" style={{width: "20%"}}/>
         <Wheel
           mustStartSpinning={mustSpin}
           prizeNumber={prizeNumber}
@@ -77,12 +86,19 @@ export default () => {
               setIsModalOpen(true);
           }}
         />
-        <button className="button2" onClick={handleSpinClick}>
-          SPIN
-        </button>
-        <br />
-        {!mustSpin ? data[prizeNumber].option : "0"}
-        <hr />
+          <Button
+          onClick={handleSpinClick}
+          sx={{
+            bgcolor: "#CB2026", // Red background
+            color: "white",     // White text
+            '&:hover': {
+              bgcolor: "#A11B1E", // Darker red for hover
+            },
+            mt: 2 // Margin top for spacing
+          }}
+        >
+            Girar
+          </Button>
       </div>
       {isModalOpen &&
       <QuestionModal
@@ -98,6 +114,10 @@ export default () => {
         challenge={challenge}
         handleClose={() => {}}
       />}
+
+      {alertVisible && 
+        <Alert severity="error">Ya jugaste hoy! Puedes volver a intentarlo mañana.</Alert>
+      }
     </>
   );
 };
