@@ -41,7 +41,6 @@ export default () => {
     if(data[1].option == "Reto"){
       const idChallenge = Math.floor(Math.random() * challenges.length)
       setChallenge(challenges[idChallenge])
-      setChallengeOpen(true)
     }
     else{
       const newPrize = Math.floor(Math.random() * prizes.length)
