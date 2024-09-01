@@ -59,7 +59,7 @@ export default () => {
   return (
     <>
       <div align="center">
-        <img src={logo} style={{width: "20%"}}/>
+        <img src={logo} style={{width: "50%"}}/>
         <Wheel
           mustStartSpinning={mustSpin}
           prizeNumber={prizeNumber}
