@@ -9,30 +9,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 
 import { Dialog, DialogTitle, DialogContent, Grid, ToggleButton, ToggleButtonGroup, Button, Alert  } from "@mui/material";
 
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  pt: 2,
-  px: 4,
-  pb: 3,
-};
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-  ...theme.applyStyles('dark', {
-    backgroundColor: '#1A2027',
-  }),
-}));
+import header from '../assets/image1.png'
 
 
 const QuestionModal = ({ open, handleClose, question, prize }) => {
@@ -63,7 +40,7 @@ const QuestionModal = ({ open, handleClose, question, prize }) => {
         display="flex"
         justifyContent="center">
         <img
-          src="../assets/image1.png" 
+          src={header}
           style={{ width: '50%', height: 'auto', borderRadius: 8 }}
         />
       </Box>

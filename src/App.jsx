@@ -5,6 +5,8 @@ import ChallengeModal from './ChallengeModal'
 import { questions, prizes, challenges } from "./data";
 import {Alert, Button} from '@mui/material'
 
+import logo from '../assets/logo.png'
+
 const data = [
   { id: 1, option: "Pregunta" },
   { id: 2, option: "Reto" },
@@ -28,7 +30,7 @@ export default () => {
   const handleSpinClick = () => {
 
     const token = localStorage.getItem('spinToken')
-    if(token){
+    if(token && token == (new Date()).toDateString()){
       setAlertVisible(true)
       return
     }
@@ -38,7 +40,7 @@ export default () => {
     setPrizeNumber(newPrizeNumber);
     setMustSpin(true);
 
-    if(data[1].option == "Reto"){
+    if(data[newPrizeNumber].option == "Reto"){
       const idChallenge = Math.floor(Math.random() * challenges.length)
       setChallenge(challenges[idChallenge])
     }
@@ -49,14 +51,15 @@ export default () => {
       const newQuestion = Math.floor(Math.random() * questions.length)
       setQuestion(questions[newQuestion])
     }
-    localStorage.setItem('spinToken', 'true');
+
+    localStorage.setItem('spinToken', (new Date()).toDateString());
   };
   
 
   return (
     <>
       <div align="center">
-        <img src="../assets/logo.png" style={{width: "20%"}}/>
+        <img src={logo} style={{width: "20%"}}/>
         <Wheel
           mustStartSpinning={mustSpin}
           prizeNumber={prizeNumber}
