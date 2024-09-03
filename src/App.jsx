@@ -30,10 +30,10 @@ export default () => {
   const handleSpinClick = () => {
 
     const token = localStorage.getItem('spinToken')
-    if(token && token == (new Date()).toDateString()){
-      setAlertVisible(true)
-      return
-    }
+    // if(token && token == (new Date()).toDateString()){
+    //   setAlertVisible(true)
+    //   return
+    // }
 
     setAlertVisible(false)
     const newPrizeNumber = Math.floor(Math.random() * data.length);
