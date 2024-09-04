@@ -199,7 +199,6 @@ export const questions = [
 ]
 
 export const prizes = [
-    "Gorra “Soy Choplover”",
     "Par de palitos de bambú",
     "Ayuda Palitos",
     "1 Gaseosa",
