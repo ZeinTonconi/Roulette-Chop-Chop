@@ -1,202 +1,158 @@
 
-
 export const questions = [
   {
-    question: "Cuántos entrantes tenemos actualmente?",
-    options: ["5", "7", "9", "10"],
+    question: "¿Qué significa el nombre 'Bolivia'?",
+    options: [
+      "Tierra de volcanes",
+      "En honor a Simón Bolívar",
+      "Lugar de los Andes",
+      "Valle sagrado"
+    ],
+    correct: 1
+  },
+  {
+    question: "¿Qué animal es símbolo nacional de Bolivia?",
+    options: ["Cóndor", "Jaguar", "Llama", "Flamenco"],
+    correct: 0
+  },
+  {
+    question: "¿Qué departamento boliviano no tiene frontera internacional?",
+    options: ["Beni", "Cochabamba", "Oruro", "Chuquisaca"],
+    correct: 1
+  },
+  {
+    question: "¿Cuál de estas danzas es originaria de Oruro?",
+    options: ["Caporales", "Morenada", "Diablada", "Tobas"],
     correct: 2
   },
   {
-    question: "Qué guarnición es la única que tiene ingredientes diferentes a todas?",
-    options: [
-      "Fideos yakisoba",
-      "Arroz chaufa",
-      "Fideos yakisoba picantes",
-      "Chop suey de verduras"
-    ],
-    correct: 1 // The correct option is "Arroz chaufa", which is at index 1
+    question: "¿En qué año se fundó la República de Bolivia?",
+    options: ["1825", "1809", "1830", "1850"],
+    correct: 0
   },
   {
-    question: "Cuál era la promo de Agosto?",
+    question: "¿Qué personaje fue presidente y también jugó en la selección boliviana de fútbol?",
     options: [
-      "Tricochop",
-      "Tricolor",
-      "Tricolorchop",
-      "Bolichop"
-    ],
-    correct: 0 // "Tricochop" is the correct answer, index 0
-  },
-  {
-    question: "Qué postre fue el primero en estar en el menú?",
-    options: [
-      "Arroz con leche asiático",
-      "Taiyaki",
-      "Mochis",
-      "Cheesecake de Matcha"
-    ],
-    correct: 2 // "Mochis" is the correct answer, index 2
-  },
-  {
-    question: "Para qué festividad estrenamos los Fideos yakisoba picantes?",
-    options: [
-      "Navidad",
-      "Aniversario",
-      "Semana Santa",
-      "Año nuevo asiático"
-    ],
-    correct: 3 // "Año nuevo asiático" is the correct answer, index 3
-  },
-  {
-    question: "Cuál es la dirección de Chop Chop?",
-    options: [
-      "Barrio Petrolero",
-      "René Barrientos #201 esq. Colombia",
-      "René Barrientos #200 esq. Colombia",
-      "René Barrientos esq. Colombia"
-    ],
-    correct: 1 // "René Barrientos #201 esq. Colombia" is the correct answer, index 1
-  },
-  {
-    question: "En los cuadros que tenemos en el restaurante, Qué plato es el que NO está en las fotos?",
-    options: [
-      "Ramen",
-      "Rollitos primavera",
-      "Tofu",
-      "Pad Thai"
-    ],
-    correct: 3 // "Pad Thai" is the correct answer, index 3
-  },
-  {
-    question: "Cuál es el plato conocido como “plato arco iris”?",
-    options: [
-      "Pad Thai",
-      "Fideos Yakisoba",
-      "Bibimbap",
-      "Ramen"
-    ],
-    correct: 2 // "Bibimbap" is the correct answer, index 2
-  },
-  {
-    question: "De qué país son los Fideos Yakisoba?",
-    options: [
-      "Japón",
-      "China",
-      "Corea del Sur",
-      "Tailandia"
-    ],
-    correct: 0 // "Japón" is the correct answer, index 0
-  },
-  {
-    question: "Cuántos platos del menú son de Corea del Sur?",
-    options: [
-      "4",
-      "3",
-      "2",
-      "1"
-    ],
-    correct: 2 // "2" is the correct answer, index 2
-  },
-  {
-    question: "Entre estos cuál es el último plato que entró al menú?",
-    options: [
-      "Taiyaki",
-      "Empanadillas chinas",
-      "Ramen",
-      "Bibimbap"
-    ],
-    correct: 1 // "Empanadillas chinas" is the correct answer, index 1
-  },
-  {
-    question: "En qué fecha inauguramos el restaurante con atención física?",
-    options: [
-      "12 de enero",
-      "10 de enero",
-      "11 de enero",
-      "13 de enero"
-    ],
-    correct: 0 // "12 de enero" is the correct answer, index 0
-  },
-  {
-    question: "Qué color ingresó a nuestra paleta de colores para este 2do aniversario?",
-    options: [
-      "Negro",
-      "Blanco",
-      "Crema",
-      "Plomo"
-    ],
-    correct: 2 // "Crema" is the correct answer, index 2
-  },
-  {
-    question: "Cuántos platos de origen japonés tenemos?",
-    options: [
-      "2",
-      "5",
-      "4",
-      "3"
-    ],
-    correct: 1 // "5" is the correct answer, index 1
-  },
-  {
-    question: "En cuántas redes sociales estamos presentes?",
-    options: [
-      "2",
-      "3",
-      "4",
-      "1"
-    ],
-    correct: 2 // "4" is the correct answer, index 2
-  },
-  {
-    question: "Cuántos “Año Nuevo Asiático” celebramos?",
-    options: [
-      "1",
-      "2",
-      "3",
+      "Víctor Paz Estenssoro",
+      "Evo Morales",
+      "Hernán Siles Zuazo",
       "Ninguno"
     ],
-    correct: 0 // "1" is the correct answer, index 0
+    correct: 3
   },
   {
-    question: "De qué está rellena la banderilla coreana?",
-    options: [
-      "Queso",
-      "Salchicha",
-      "Ambas",
-      "Ninguna"
-    ],
-    correct: 2 // "Ambas" is the correct answer, index 2
+    question: "¿Qué departamento produce más soya en Bolivia?",
+    options: ["Beni", "Tarija", "Santa Cruz", "La Paz"],
+    correct: 2
   },
   {
-    question: "Qué ingrediente le da el ácido al Pad Thai?",
-    options: [
-      "Tamarindo",
-      "Salsa soya",
-      "Huevo",
-      "Maní"
-    ],
-    correct: 0 // "Tamarindo" is the correct answer, index 0
+    question: "¿Cuál es el nombre del lago navegable más alto del mundo que comparte Bolivia con Perú?",
+    options: ["Poopó", "Desaguadero", "Titicaca", "Sajama"],
+    correct: 2
   },
   {
-    question: "Cuántos países abarcamos en cuestión de platos?",
-    options: [
-      "2",
-      "3",
-      "6",
-      "4"
-    ],
-    correct: 3 // "4" is the correct answer, index 3
+    question: "¿Qué flor es considerada símbolo nacional de Bolivia?",
+    options: ["Kantuta", "Jazmín", "Patujú", "Rosa"],
+    correct: 0
   },
   {
-    question: "Cuáles son los nuevos platos por el segundo aniversario?",
+    question: "¿Cuál fue el primer departamento en declarar la independencia en 1809?",
+    options: ["Chuquisaca", "Santa Cruz", "La Paz", "Potosí"],
+    correct: 0
+  },
+  {
+    question: "¿Qué tratado fijó los límites actuales entre Bolivia y Chile tras la Guerra del Pacífico?",
     options: [
-      "Mix de mariscos",
-      "Empanadillas chinas, mix de mariscos y mochis",
-      "Taiyaki y empanadilals chinas",
-      "Empanadillas chinas, taiyakis y mix de mariscos"
+      "Tratado de Tiquina",
+      "Tratado de Sucre",
+      "Tratado de Paz y Amistad de 1904",
+      "Tratado de Ancón"
     ],
-    correct: 1 // "Empanadillas chinas, mix de mariscos y mochis" is the correct answer, index 1
+    correct: 2
+  },
+  {
+    question: "¿Qué presidente fue derrocado en 1980 durante el golpe de Estado de Luis García Meza?",
+    options: [
+      "René Barrientos",
+      "Hernán Siles Zuazo",
+      "Lidia Gueiler Tejada",
+      "Víctor Paz Estenssoro"
+    ],
+    correct: 2
+  },
+  {
+    question: "¿Qué civilización preincaica construyó Tiwanaku?",
+    options: ["Aymaras", "Uros", "Tiahuanacotas", "Chiriguanos"],
+    correct: 2
+  },
+  {
+    question: "¿Cuál es el nombre del himno nacional de Bolivia?",
+    options: [
+      "Somos libres",
+      "Bolivianos, el hado propicio",
+      "Marcha Heroica de los Andes",
+      "Canto de Libertad"
+    ],
+    correct: 1
+  },
+  {
+    question: "¿Qué líder indígena encabezó una rebelión en el siglo XVIII contra España?",
+    options: ["Simón Bolívar", "Tupac Amaru II", "Tomás Katari", "Túpac Katari"],
+    correct: 3
   }
-]
+];
+
+export const openQuestions = [
+  {
+    question: "¿Por qué se dice que Bolivia tiene dos capitales y cuál es la diferencia entre ambas en cuanto a funciones?",
+    expectedAnswer: "Sucre es la capital constitucional y sede del Tribunal Supremo de Justicia; La Paz es sede del gobierno y del poder ejecutivo y legislativo."
+  },
+  {
+    question: "Explica brevemente por qué Bolivia perdió su salida soberana al mar.",
+    expectedAnswer: "Por la Guerra del Pacífico contra Chile, entre 1879-1884, debido a disputas por recursos del desierto de Atacama. Se firmó el Tratado de 1904."
+  },
+  {
+    question: "Nombra al menos tres danzas bolivianas que hayan sido declaradas Patrimonio Cultural por la UNESCO o que representen el Carnaval de Oruro.",
+    expectedAnswer: "Ejemplos: Diablada, Morenada, Caporales, Tinku, Llamerada."
+  },
+  {
+    question: "¿Cuál es el rol histórico y simbólico del Cerro Rico de Potosí en la historia de Bolivia y del mundo?",
+    expectedAnswer: "Fuente de gran riqueza en plata durante la colonia, vital para el Imperio Español; símbolo de explotación indígena y riqueza mineral boliviana."
+  },
+  {
+    question: "¿Qué colores tiene la bandera de Bolivia y qué simboliza cada uno?",
+    expectedAnswer: "Rojo: la sangre de los héroes, Amarillo: la riqueza mineral, Verde: la riqueza natural."
+  },
+  {
+    question: "Nombra todos los departamentos de Bolivia con sus respectivas capitales.",
+    expectedAnswer: "Beni: Trinidad, Chuquisaca: Sucre, Cochabamba: Cochabamba, La Paz: La Paz, Oruro: Oruro, Pando: Cobija, Potosí: Potosí, Santa Cruz: Santa Cruz de la Sierra, Tarija: Tarija."
+  }
+];
+
+export const challenges = [
+  "Canta el coro del Himno Nacional bien fuerte",
+  "Haz una coreografía improvisada de una danza boliviana en 10 segundos",
+  "Menciona 5 departamentos de Bolivia en menos de 5 segundos",
+  "Haz una declaración de amor a Bolivia como si fuera tu crush. Tienes 10 segundos",
+  "Dibuja en 5 segundos la silueta del mapa de Bolivia",
+  "Tómate una selfie con algo que tenga los colores de Bolivia dentro del restaurante. Súbela a tu historia y etiqueta @chopchop.bo con #bicentenarioenchop (Cuenta pública)",
+  "Canta una canción de un artista boliviano durante 15 segundos",
+  "Reconoce una canción boliviana y nombra al artista",
+  "Postea en tus historias una foto con la cajita edición Bicentenario con una canción boliviana y etiqueta @chopchop.bo + #bicentenarioenchop"
+];
+
+export const challengePrizes = [
+  { prize: "Agarra Palitos + 20% de descuento en el pedido", weight: 1 },
+  { prize: "Mini chop de pollo con yakisoba", weight: 2 },
+  { prize: "Mini gaseosa", weight: 1 }
+];
+
+export const questionPrizes = [
+  { prize: "Mini gaseosa", weight: 2 },
+  { prize: "Agarra Palitos", weight: 1 },
+  { prize: "5% de descuento en el pedido de HOY", weight: 1 }
+];
+
 
 export const prizes = [
     "Par de palitos de bambú",
@@ -205,15 +161,3 @@ export const prizes = [
     "1 Mini especial de pollo con guanición a elección"
   ];
 
-export const challenges = [
-    "Sube una historia en este instante de tu plato, o de los ambientes de Chop Chop, etiquétanos y añade #chopchop2años. Cuando lo realices muéstranos en caja para regalarte nuestro “Ayuda Palitos”",
-    "Haz un “en vivo” de 2 minutos comiendo, una vez corroborado acércate a caja para pedir una gaseosa de regalo.",
-    "Si estás acompañado de más de 3 personas, tienen una gaseosa de regalo.",
-    "Tómate una foto en el letrero “Send Noods”, súbela a tus historias etiquetándonos y con #deotromambo. Una vez confirmado acércate a caja para mostrarlo y llévate un par de palitos de bambú.",
-    "Canta en caja durante 10 segundos y te llevas 1 par de palitos de bambú + 1 ayuda palitos de regalo.",
-    "Haz un video ahora mismo diciendo “Chop Chop es mi lugar favorito” súbelo a tus historias, etiquétanos y muéstranos en Caja, confirmado el reto llévate 1 par de palitos de bambú + 1 ayuda palitos + gorra “Soy Choplover”.",
-    "Da una vuelta al mazando corriendo y te daremos una gaseosa de regalo.",
-    "Cuéntanos un chiste, si nos reímos, te regalamos un “ayuda palitos”.",
-    "Tómate una foto con nuestro sombrero asiático en el ambiente instagrameable, etiquétanos y pon #choptástico; una vez confirmado te regalamos 1 par de palitos de bambú y 1 gaseosa."
-  
-]

@@ -9,7 +9,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 
 import { Dialog, DialogTitle, DialogContent, Grid, ToggleButton, ToggleButtonGroup, Button, Alert  } from "@mui/material";
 
-import header from '../assets/image1.png'
+import header from '../assets/logo.jpg'
 
 
 const QuestionModal = ({ open, handleClose, question, prize }) => {
@@ -35,7 +35,7 @@ const QuestionModal = ({ open, handleClose, question, prize }) => {
 
   return (
     <Dialog open={open} onClose={handleClose} maxWidth="xs" fullWidth>
-      <DialogTitle sx={{ bgcolor: "#FDFCEB" }}>
+      <DialogTitle sx={{ bgcolor: "#606060", color: "#fff" }}>
       <Box mb={2}
         display="flex"
         justifyContent="center">
@@ -46,7 +46,7 @@ const QuestionModal = ({ open, handleClose, question, prize }) => {
       </Box>
         {question.question}
       </DialogTitle>
-      <DialogContent sx={{ bgcolor: "#FDFCEB" }}>
+      <DialogContent sx={{ bgcolor: "#606060", color: "#fff" }}>
         <Grid container spacing={2}>
           {question.options.map((option, index) => (
             <Grid item xs={6} key={index}>
@@ -55,6 +55,7 @@ const QuestionModal = ({ open, handleClose, question, prize }) => {
                 color={getButtonColor(index)}
                 fullWidth
                 onClick={() => handleAnswer(index)}
+                 sx={{ color: "#fff", borderColor: "#fff" }}
               >
                 {option}
               </Button>
