@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 
 // Import the image
-import backgroundImage from '../assets/image_gray2.png';
+import backgroundImage from '../assets/image1Bolivia.png';
 import { useState } from "react";
 
 // Import the Chinese-themed font from Google Fonts

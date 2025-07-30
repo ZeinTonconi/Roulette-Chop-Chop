@@ -17,7 +17,7 @@ export const questions = [
   },
   {
     question: "¿Qué departamento boliviano no tiene frontera internacional?",
-    options: ["Beni", "Cochabamba", "Oruro", "Chuquisaca"],
+    options: ["Beni", "Cochabamba", "Oruro", "Potosi"],
     correct: 1
   },
   {
